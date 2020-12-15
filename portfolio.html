@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <title>Photo studio | Portfolio</title>
+</head>
+
+<body>
+    
+    <header id="home">
+       <nav class="sticky">
+            <div class="heading-div">
+                <a href="#home" class="smoothScroll"><img src="img/logo2.jpg" alt="Photo studio"></a>
+                <ul class="nav-menu">
+                    <a href="index.html" class="smoothScroll"><li>About</li></a>
+                    <a href="portfolio.html" class="smoothScroll"><li>Portfolio</li></a>
+                    <a href="blog.html" class="smoothScroll"><li>Blog</li></a>
+                    <a href="contact.html" class="smoothScroll"><li>Contact</li></a>
+                </ul>
+                
+                <a class="hamburger-menu">
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                </a>
+            </div>
+       </nav>
+    </header>
+    <section class="header-section container"></section>
+    
+    
+    <section class="portfolio container" id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="line"></div>
+        
+        <div class="portfolio-items container">
+            <img src="img/4.jpg" alt="image 4">
+            <img src="img/5.jpg" alt="image 5">
+            <img src="img/6.jpg" alt="image 6">
+            <img src="img/7.jpg" alt="image 7">
+            <img src="img/8.jpg" alt="image 8">
+            <img src="img/9.jpg" alt="image 9">
+        </div>
+        
+    </section>
+
+    <a href="#home"><div class="backtotop"><div></div></div></a>
+    
+    <footer>
+        <p>&copy; Site02</p>
+        <p id = "datum"></p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script>
+        let datum = new Date();
+        document.getElementById("datum").innerHTML = datum;
+
+    </script>
+
+</body>
+</html>

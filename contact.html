@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <title>Photo studio | Welcome</title>
+</head>
+
+<body>
+    
+    <header id="home">
+       <nav class="sticky">
+            <div class="heading-div">
+                <a href="#home" class="smoothScroll"><img src="img/logo2.jpg" alt="Photo studio"></a>
+                <ul class="nav-menu">
+                    <a href="index.html" class="smoothScroll"><li>About</li></a>
+                    <a href="portfolio.html" class="smoothScroll"><li>Portfolio</li></a>
+                    <a href="blog.html" class="smoothScroll"><li>Blog</li></a>
+                    <a href="contact.html" class="smoothScroll"><li>Contact</li></a>
+                </ul>
+                
+                <a class="hamburger-menu">
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                </a>
+            </div>
+       </nav>
+    </header>
+    <section class="header-section container"></section>
+    
+    
+    <section class="contact container" id="contact">
+        <h2>Contact me</h2>
+        <div class="line"></div>
+        <form  method="POST">
+                <label for="name">Your name</label>
+                <input id = "ime" type="text" name="name"  required>
+                <label for="mail">Your e-mail</label>
+                <input id = "mejl" type="email" name="mail"  required>
+                <label for="message">Your message</label>
+                <textarea name="idMessage" id="message" rows="5"></textarea>
+                <button>Submit</button>
+        </form>
+    </section>
+
+    <a href="#home"><div class="backtotop"><div></div></div></a>
+    
+    <footer>
+        <p>&copy; Site02</p>
+        <p id = "datum"></p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script>
+        let datum = new Date();
+        document.getElementById("datum").innerHTML = datum;
+    </script>
+
+</body>
+</html>
